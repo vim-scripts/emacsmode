@@ -1,5 +1,6 @@
 #!/usr/bin/perl -w
 # -*- Mode: perl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+# $Id: emacsmode.pl,v 1.1.1.1 2004/03/28 18:06:56 jerry Exp $
 
 sub bail();
 
@@ -30,7 +31,7 @@ if(!$input) {
     'c++' => "cpp",
 );
 
-if($input =~ m/-\*-/) {
+if($input =~ m/.*-\*-.*Mode\:.*-\*-.*$/) {
     #get the meat
     @input = split(/-\*-/, $input);
     $input = $input[1];

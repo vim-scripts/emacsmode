@@ -2,8 +2,7 @@
 "
 " File: emacsmode.vim
 " Author: Jerry Talkington <jerry@smartasfuck.com>
-" Last Change:  2004 Jan 04
-" Version: 0.1
+" $Id: emacsmode.vim,v 1.1.1.1 2004/03/28 18:06:56 jerry Exp $
 
 " the max lines to read
 "let &modelines = 3
@@ -24,7 +23,7 @@ if(has("perl"))
         while($count < $lines) {
             $line = $curbuf->Get($count);
 
-            if($line =~ m/-\*-/) {
+            if($line =~ m/.*-\*-.*Mode\:.*-\*-.*$/) {
                 @line = split(/-\*-/, $line);
                 $line = $line[1];
                 $line =~ s/\s+//g;

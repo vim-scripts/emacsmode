@@ -1,0 +1,6 @@
+0.01 Initial Release
+
+0.02 Fixed a stupid bug where an error was printed if no Mode
+     line was present.
+
+0.03 Fix error message if the line contains a -*- but no Mode
