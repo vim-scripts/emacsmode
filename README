@@ -1,0 +1,9 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=874
+
+This is a script to read the Emacs -*- Mode -*- lines that can be found at the
+top of many source code files.  I don't use Emacs, but a lot of source files have the lines.
+
+I tested this out by using it on the Mozilla code base, so the cases that are
+handled are what appear there.  If there are other options that you find in
+other Emacs mode lines, send me an email so that I can get them added.
+
